@@ -38,7 +38,7 @@ const createUser = async (req, res) => {
     console.log(error)
     res.status(500).json({
       status: "failed",
-      message: "An error occurred"
+      message: "Internal server error"
     })
   }
 
@@ -132,7 +132,7 @@ const updateUser = async (req, res) => {
     console.log(error);
     res.status(500).json({
     status: 'failed',
-    message: error.message,
+    message: "Internal server error",
     })
   }
 }
