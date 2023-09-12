@@ -45,16 +45,16 @@ The API provides the following endpoints for managing user data:
 
 
 ### Create a User
-- **Endpoint**: `POST /api/users`
+- **Endpoint**: `POST /api`
 
 ### Get a User
-- **Endpoint**: `GET /api/users/:id`
+- **Endpoint**: `GET /api/:id`
 
 ### Update a User
-- **Endpoint**: `PUT /api/users/:id`
+- **Endpoint**: `PUT /api/:id`
 
 ### Delete a User
-- **Endpoint**: `DELETE /api/users/:id`
+- **Endpoint**: `DELETE /api/:id`
 
 
 

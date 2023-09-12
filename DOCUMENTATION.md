@@ -135,7 +135,7 @@ Content-Type: application/json
 ```json
 {
     "status": "success",
-    "message": "User successfully deleted",
+    "message": "User created successfully",
     "data": {
         "_id": "64ffba1f9aad62fe34a4a008",
         "name": "Alice Johnson",
@@ -165,7 +165,7 @@ Content-Type: application/json
 }
 ```
 
-## Creating a new User
+## Updating a new User
 
 - **Endpoint**: `POST /api`
 - **Request Body**:
@@ -180,10 +180,10 @@ Content-Type: application/json
 ```json
 {
     "status": "success",
-    "message": "User successfully deleted",
+    "message": "User updated successfully",
     "data": {
         "_id": "64ffba1f9aad62fe34a4a008",
-        "name": "Sam",
+        "name": "sams",
         "createdAt": "2023-09-11T00:54:51.721Z",
         "updatedAt": "2023-09-11T02:21:19.154Z",
         "__v": 0
