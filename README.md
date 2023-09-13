@@ -47,8 +47,11 @@ The API provides the following endpoints for managing user data:
 ### Create a User
 - **Endpoint**: `POST /api`
 
-### Get a User
+### Get all Users
 - **Endpoint**: `GET /api/:id`
+
+### Get a specific User
+- **Endpoint**: `GET /api?name=Sam`
 
 ### Update a User
 - **Endpoint**: `PUT /api/:id`

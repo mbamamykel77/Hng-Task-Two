@@ -50,20 +50,21 @@ const createUser = async (req, res) => {
 // fetch a user
 const getUser = async (req, res) => {
   try {
-    const {id} = req.params;
+    const { name } = req.query;
+    const query = name ? { name } : {};
+    const people = await User.find(query);
 
-    const user = await User.findById(id)
-    if(!user) {
-      return res.status.json({
+    if (!people || people.length === 0) {
+      return res.status(404).json({
         status: "failed",
         message: "User not found",
-      })
+      });
     }
 
     res.status(200).json({
       status: "success",
-      message: "User successfully retrieved",
-      data: user,
+      message: "User(s) successfully retrieved",
+      data: people,
     });
     
   } catch (error) {

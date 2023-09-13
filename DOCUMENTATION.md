@@ -47,9 +47,9 @@ The server should be running on `http://localhost:5000`.
   ```
 
 
-### Get a User
+### Get all Users
 
-- **Endpoint**: `GET /api/:id`
+- **Endpoint**: `GET /api`
 - **Response**:
 
   ```json
@@ -59,6 +59,36 @@ The server should be running on `http://localhost:5000`.
     "data": {
       "_id": "user-id",
       "name": "John Doe",
+      "createdAt": "timestamp",
+      "updatedAt": "timestamp"
+    }
+  }
+
+  {
+    "status": "success",
+    "message": "User successfully retrieved",
+    "data": {
+      "_id": "user-id",
+      "name": "Tony Doe",
+      "createdAt": "timestamp",
+      "updatedAt": "timestamp"
+    }
+  }
+  ```
+
+
+  ### Get a specific User
+
+- **Endpoint**: `GET /api?name=Sam`
+- **Response**:
+
+  ```json
+  {
+    "status": "success",
+    "message": "User successfully retrieved",
+    "data": {
+      "_id": "user-id",
+      "name": "Sam",
       "createdAt": "timestamp",
       "updatedAt": "timestamp"
     }
